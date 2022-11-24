@@ -1,0 +1,19 @@
+<h2>Login</h2>
+
+<form action="/login" method="post">
+<label>
+    Email
+    <input type="email" name="email" placeholder="you@ironhack.com">
+</label>
+
+<label>
+    Password
+    <input type="password" name="password" placeholder="**********">
+</label>
+
+<button type="submit">Login</button>
+</form>
+
+{{#if errorMessage}}
+<p>{{errorMessage}}</p>
+{{/if}}
